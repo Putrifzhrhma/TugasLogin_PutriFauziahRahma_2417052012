@@ -61,7 +61,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // Login
     if (isset($_POST['login'])) {
 
         $nama = trim($_POST['nama']);
