@@ -35,7 +35,6 @@ if (isset($_POST['update'])) {
 
     if (!empty($nama) && !empty($password)) {
 
-        // Hash password baru
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         $update = $conn->prepare("UPDATE users SET nama = ?, password = ? WHERE id = ?");
